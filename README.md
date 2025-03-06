@@ -22,7 +22,7 @@ Make sure you have the following installed:
 ### Steps
 1. Clone the repository:
    ```sh
-   git clone <repo-url>
+   git clone [<repo-url>](https://github.com/AvatarN03/ExpenseTracker-NextJS.git)
    ```
 2. Navigate to the project directory:
    ```sh
@@ -66,6 +66,6 @@ This project is licensed under the MIT License.
 
 ## Contact
 For questions or support, reach out via:
-- Email: [your-email@example.com]
+- Email: jsprashanth003@gmail.com 
 - GitHub Issues
 
