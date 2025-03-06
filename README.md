@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Expense Tracker
 
-## Getting Started
+## Overview
+An expense tracker application built with **Next.js**, **Clerk** for authentication, **Neon DB**, and **Prisma**. This app allows users to track their expenses efficiently and securely.
 
-First, run the development server:
+## Features
+- User authentication with **Clerk**
+- Database management with **Neon DB**
+- ORM with **Prisma**
+- Responsive UI built in **Next.js**
+- Add, edit, and delete expenses
+- View expense summary and analytics
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Prerequisites
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/)
+- [Neon DB account](https://neon.tech/)
+- [Clerk account](https://clerk.dev/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Steps
+1. Clone the repository:
+   ```sh
+   git clone <repo-url>
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd expense-tracker
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Set up environment variables:
+   Create a `.env` file in the root directory and add:
+   ```sh
+   DATABASE_URL=<your_neon_db_url>
+   NEXT_PUBLIC_CLERK_FRONTEND_API=<your_clerk_frontend_api>
+   CLERK_SECRET_KEY=<your_clerk_secret_key>
+   ```
+5. Push Prisma schema to database:
+   ```sh
+   npx prisma db push
+   ```
+6. Run the development server:
+   ```sh
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
+- Sign up or log in using **Clerk**.
+- Add, edit, or delete your expenses.
+- View your expense summary and analytics.
 
-## Learn More
+## Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m "Add feature"`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a pull request.
 
-To learn more about Next.js, take a look at the following resources:
+## License
+This project is licensed under the MIT License.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact
+For questions or support, reach out via:
+- Email: [your-email@example.com]
+- GitHub Issues
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
