@@ -22,7 +22,7 @@ Make sure you have the following installed:
 ### Steps
 1. Clone the repository:
    ```sh
-   git clone [<repo-url>](https://github.com/AvatarN03/ExpenseTracker-NextJS.git)
+   git clone https://github.com/AvatarN03/ExpenseTracker-NextJS.git
    ```
 2. Navigate to the project directory:
    ```sh
